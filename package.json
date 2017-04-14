@@ -8,6 +8,8 @@
   },
   "scripts": {
     "start": "node server.js",
+    "docker-build": "docker build -t koop-google-sheets .",
+    "docker-start": "docker run -it -p 8080:8080 koop-google-sheets",
     "test": "standard"
   },
   "dependencies": {
